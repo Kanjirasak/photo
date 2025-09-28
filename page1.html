@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PF</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+
+    <div id="nav-placeholder"></div>
+
+    <main class="main-content">
+        <section class="hero-section">
+            <div class="image-container">
+                <img src="to/photo1.jpg" alt="Minimalist Fashion Portfolio - Image 1" class="hero-image">
+                <button class="arrow-right">&gt;</button>
+            </div>
+        </section>
+
+        <section class="gallery-section">
+            <div class="gallery-item">
+                <img src="to/photo2.jpg" alt="Minimalist Fashion Portfolio - Image 2" class="gallery-image">
+                <div class="gallery-overlay"> <h2>Fashion Set 02</h2>
+                    <p>Minimalism is not a lack of something, but the perfect amount of everything.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        fetch("nav.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("nav-placeholder").innerHTML = data;
+            })
+            .catch(error => console.error('Error loading navigation:', error));
+    </script>
+</body>
+</html>

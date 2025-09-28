@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="styles.css"> 
+  <link rel="stylesheet" href="contact.css"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+  <div id="nav-placeholder"></div>
+
+  <main class="main-content">
+    <section class="contact-section">
+      <div class="contact-container">
+        <h2>ติดต่อเรา</h2>
+        <p>หากคุณมีคำถาม ข้อเสนอแนะ หรืออยากร่วมงานกับเรา สามารถกรอกแบบฟอร์มด้านล่างได้เลย</p>
+        
+        <form class="contact-form">
+          <div class="form-group">
+            <label for="name">ชื่อของคุณ</label>
+            <input type="text" id="name" name="name" placeholder="กรอกชื่อของคุณ" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="email">อีเมล</label>
+            <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+          </div>
+          
+          <div class="form-group full-width">
+            <label for="message">ข้อความ</label>
+            <textarea id="message" name="message" rows="6" placeholder="พิมพ์ข้อความที่นี่..." required></textarea>
+          </div>
+          
+          <button type="submit" class="btn-submit">ส่งข้อความ</button>
+        </form>
+
+        <div class="contact-info">
+          <h3>หรือติดต่อผ่านช่องทางอื่น</h3>
+          <ul class="info-list">
+            <li>
+              <i class="fas fa-envelope"></i>
+              <a href="">kanjirasak30@gmail.com</a>
+            </li>
+            <li>
+              <i class="fas fa-phone-alt"></i>
+              <a href="">098-XXX-XXXX</a>
+            </li>
+            <li>
+              <i class="fab fa-facebook"></i>
+              <a href="https://www.facebook.com/gose.rb" target="_blank">Phommiphat Inkomwong</a>
+            </li>
+            <li>
+              <i class="fab fa-instagram"></i>
+              <a href="https://www.instagram.com/pif_rb?utm_source=ig_web_button_share_sheet&igsh=ZmI5a2ptenNmamxz" target="_blank">@pif_rb</a>
+            </li>
+          </ul>
+        </div>
+        </div>
+    </section>
+  </main>
+
+  <script>
+    fetch("nav.html")
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("nav-placeholder").innerHTML = data;
+        })
+        .catch(error => console.error('Error loading navigation:', error));
+</script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เกี่ยวกับเรา</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="about.css"> 
+</head>
+<body>
+
+    <div id="nav-placeholder"></div>
+
+    <main class="main-content">
+        <section class="about-hero">
+            <h1>ทีมงานผู้สร้างสรรค์ของเรา</h1>
+            <p>พบกับทีมงานมืออาชีพที่มีความหลงใหลในงานศิลปะและการถ่ายภาพ</p>
+        </section>
+
+        <section class="team-grid-section">
+            <div class="team-grid">
+                
+                <div class="team-member">
+                    <div class="member-photo-container">
+                        <img src="to/photo1.jpg" alt="สมชาย ใจดี" class="member-photo">
+                    </div>
+                    <h3 class="member-name">สมชาย ใจดี</h3>
+                    <p class="member-role">ผู้ก่อตั้ง / ช่างภาพหลัก</p>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-photo-container">
+                        <img src="to/photo1.jpg" alt="สมหญิง รักเรียน" class="member-photo">
+                    </div>
+                    <h3 class="member-name">สมหญิง รักเรียน</h3>
+                    <p class="member-role">บรรณาธิการภาพ</p>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-photo-container">
+                        <img src="to/photo1.jpg" alt="ชัยชนะ กล้าหาญ" class="member-photo">
+                    </div>
+                    <h3 class="member-name">ชัยชนะ กล้าหาญ</h3>
+                    <p class="member-role">ผู้ช่วยช่างภาพ</p>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-photo-container">
+                        <img src="to/photo1.jpg" alt="พรพรรณ รุ่งเรือง" class="member-photo">
+                    </div>
+                    <h3 class="member-name">พรพรรณ รุ่งเรือง</h3>
+                    <p class="member-role">ฝ่ายการตลาด</p>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-photo-container">
+                        <img src="to/photo1.jpg" alt="มนตรี มีสุข" class="member-photo">
+                    </div>
+                    <h3 class="member-name">มนตรี มีสุข</h3>
+                    <p class="member-role">ช่างภาพวิดีโอ</p>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-photo-container">
+                        <img src="to/photo1.jpg" alt="ดาริกา สุขสันต์" class="member-photo">
+                    </div>
+                    <h3 class="member-name">ดาริกา สุขสันต์</h3>
+                    <p class="member-role">ผู้ช่วยฝ่ายผลิต</p>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-photo-container">
+                        <img src="to/photo1.jpg" alt="วีระชัย พลังพล" class="member-photo">
+                    </div>
+                    <h3 class="member-name">วีระชัย พลังพล</h3>
+                    <p class="member-role">ผู้ดูแลอุปกรณ์</p>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-photo-container">
+                        <img src="to/photo1.jpg" alt="อรุณรัตน์ แจ่มใส" class="member-photo">
+                    </div>
+                    <h3 class="member-name">อรุณรัตน์ แจ่มใส</h3>
+                    <p class="member-role">ฝ่ายสนับสนุน</p>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-photo-container">
+                        <img src="to/photo1.jpg" alt="ณัฐพล มั่นคง" class="member-photo">
+                    </div>
+                    <h3 class="member-name">ณัฐพล มั่นคง</h3>
+                    <p class="member-role">ที่ปรึกษา</p>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // โหลด nav.html มาใส่ตรง nav-placeholder
+        fetch("nav.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("nav-placeholder").innerHTML = data;
+            })
+            .catch(error => console.error('Error loading navigation:', error));
+    </script>
+</body>
+</html>
